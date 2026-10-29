@@ -1,0 +1,133 @@
+
+.hero {
+  width: 100%;
+  padding: 76px 24px 60px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.audience-toggle {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px;
+  margin-bottom: 78px;
+  background: #eef0f6;
+  border-radius: 60px;
+}
+
+.toggle-option {
+  min-width: 168px;
+  min-height: 78px;
+  padding: 0 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  color: #555555;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.toggle-option.selected {
+  color: #000000;
+  background: #ffffff;
+}
+
+.hero h1 {
+  margin: 0 0 22px;
+  color: #000000;
+  font-size: clamp(64px, 6.3vw, 124px);
+  font-weight: 900;
+  letter-spacing: -5px;
+  line-height: 1.05;
+}
+
+.hero h2 {
+  margin: 0 0 24px;
+  color: #000000;
+  font-size: clamp(25px, 2.2vw, 40px);
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1.25;
+}
+
+.hero-description {
+  max-width: 1250px;
+  margin: 0 auto 24px;
+  color: #111111;
+  font-size: clamp(17px, 1.5vw, 27px);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+}
+
+.hero-button {
+  min-height: 68px;
+  padding: 0 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 45px;
+  font-size: 21px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.hero-signup {
+  color: #ffffff;
+  background: #000000;
+}
+
+.hero-contact {
+  color: #111111;
+  background: #eef0f6;
+}
+
+@media (max-width: 760px) {
+  .hero {
+    padding: 55px 20px;
+  }
+
+  .audience-toggle {
+    margin-bottom: 55px;
+  }
+
+  .toggle-option {
+    min-width: 115px;
+    min-height: 56px;
+    padding: 0 18px;
+    font-size: 16px;
+  }
+
+  .hero h1 {
+    margin-bottom: 20px;
+    font-size: clamp(48px, 12vw, 72px);
+    letter-spacing: -3px;
+  }
+
+  .hero h2 {
+    font-size: 25px;
+    letter-spacing: -0.5px;
+  }
+
+  .hero-description {
+    font-size: 17px;
+  }
+
+  .hero-actions {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .hero-button {
+    min-height: 54px;
+    padding: 0 23px;
+    font-size: 17px;
+  }
+}
